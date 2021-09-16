@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to my page</title>
+    <style>
+        a {
+            color:green;
+        }
+        h1 {
+            border-bottom:3px gray solid;
+            font-size:45px;
+            text-align:center;
+            margin:0;
+            padding:20px;
+        }
+        ul{
+            border-right:3px solid gray;
+            margin:1px;
+            padding:20px;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #context{
+            padding:20px
+        }
+    </style>
 </head>
 <body>
-    <h1><a href="index.html">K_Minseop</a></h1>
+    <h1><a href="index.html" style="text-decoration:none">K_Minseop</a></h1>
+    
+    <div id="grid">
+        <ul>
+            <li><a href="intro.html">자기소개</a></li>
+            <br>
+            <li><a href="music.html">좋아하는 노래들</a></li>
+        </ul>
 
-    <ul>
-        <li><a href="intro.html">자기소개</a></li>
-        <li><a href="music.html">좋아하는 노래들</a></li>
-    </ul>
+        <div id="context">
+            <img src="img_with_sister.png" alt="누나랑 찍은 사진" width="200">
 
-    <img src="img_with_sister.png" alt="누나랑 찍은 사진" width="200">
-
-    <h2><em>자기소개</em></h2>
-    <ol>
-        <strong><li>이름</li></strong>
-        곽민섭
-        <strong><li>출생</li></strong>
-        2002년 2월 18일 2시 18분 (아산병원에서 태어남)
-        <strong><li>본가</li></strong>
-        경기도 하남 미사강변도시
-    </ol>
-
+            <h2><em>자기소개</em></h2>
+            <ol>
+                <strong><li>이름</li></strong>
+                곽민섭
+                <strong><li>출생</li></strong>
+                2002년 2월 18일 2시 18분 (아산병원에서 태어남)
+                <strong><li>본가</li></strong>
+                경기도 하남 미사강변도시
+            </ol>
+        </div>
+    </div>  
     
 </body>
 </html>
