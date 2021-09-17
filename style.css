@@ -1,0 +1,32 @@
+a {
+    color:green;
+}
+h1 {
+    border-bottom:3px gray solid;
+    font-size:45px;
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+#grid ul{
+    border-right:3px solid gray;
+    margin:1px;
+    padding:20px;
+}
+#grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+img{
+    padding:20px;
+}
+@media(max-width:500px){
+    #grid{
+        display:block;
+    }
+    #grid ul{
+        border-right:none;
+        border-bottom:2px dashed gray;
+    }
+
+}
