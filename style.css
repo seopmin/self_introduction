@@ -20,6 +20,9 @@ h1 {
 img{
     padding:20px;
 }
+#context{
+    margin:20px;
+}
 @media(max-width:500px){
     #grid{
         display:block;
