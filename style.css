@@ -1,40 +1,68 @@
-a {
-    color:black;
+header {
+    background-color: rgb(60, 107, 155);
+    text-align: center;
+    border-radius: 3px;
+  }
+  header a {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    
+  }
+  .list {
+    background-color: rgb(60, 107, 155);
+    position: relative;
+    clear: both;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  section div {
+    display:inline-block;
+    font-size: 17px;
+  }
+  section>div a{
+    color: rgb(223, 205, 205);
     text-decoration: none;
-}
-a:hover{
-    color: dodgerblue;
+    transition: 1s;
+  }
+  section>div a:hover{
+    color:black;
     text-decoration: underline;
-}
-h1 {
-    border-bottom:3px gray solid;
-    font-size:45px;
-    text-align:center;
-    margin:0;
-    padding:20px;
-}
-#grid ul{
-    border-right:3px solid gray;
-    margin:1px;
-    padding:20px;
-}
-#grid{
-    display:grid;
-    grid-template-columns: 150px 1fr;
-}
-img{
-    padding:20px;
-}
-#context{
-    margin:20px;
-}
-@media(max-width:500px){
-    #grid{
-        display:block;
-    }
-    #grid ul{
-        border-right:none;
-        border-bottom:2px dashed gray;
-    }
-
-}
+  }
+  section div:nth-of-type(1){
+    position:absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%, -50%);
+  }
+  section div:nth-of-type(2){
+    position:absolute;
+    top:50%;
+    left:70%;
+    transform: translate(-50%, -50%); 
+  }
+  .contentBox{
+    /* border:5px solid black; */
+    position: relative;
+  }
+  .contentBox img{
+    width: 200px;
+    display: inline-block;
+    margin-left: 30px;
+    border-radius: 15px;
+    box-shadow: 5px -5px 15px rgba(105, 71, 71, 0.836);
+    margin-top: 20px
+  }
+  .contentBox ul{
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+  }
+  .contentBox ul li{
+    margin-top: 15px;
+  }
+  
