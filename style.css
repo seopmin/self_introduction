@@ -145,6 +145,7 @@ header #home{
   border: 1px solid black;
   border-radius: 50% 40% 35% 40%;
   padding: 5px;
+  color: rgb(10, 138, 138);
   text-decoration: none;
 }
 .circleList:hover a{
