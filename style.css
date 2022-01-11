@@ -1,68 +1,193 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.headerList{
+  background-color: rgb(60, 107, 155);
+  /* position: relative; */
+  /* clear: both; */
+  overflow: hidden;
+}
+.headerList #git{
+  color: pink;
+  margin: 5px 10px;
+  float: right;
+  font-size: 30px;
+}
+.headerList #insta{
+  color: pink;
+  float: right;
+  margin: 5px 10px;
+  font-size:30px
+}
 header {
-    background-color: rgb(60, 107, 155);
-    text-align: center;
-    border-radius: 3px;
+  background-color: rgb(60, 107, 155);
+  text-align: center;
+  /* border-radius: 5px 5px 0 0; */
+}
+header a {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+}
+header #home{
+  color: beige;
+}
+.list {
+  background-color: rgb(60, 107, 155);
+  position: relative;
+  clear: both;
+  height: 50px;
+  border-radius: 0 0 5px 5px;
+  border-top: 1px dotted rgba(255, 255, 255, 0.5);
+}
+.list div {
+  display: inline-block;
+  font-size: 17px;
+}
+.list>div a {
+  color: rgb(223, 205, 205);
+  text-decoration: none;
+  transition: 1s;
+}
+.list>div a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.list div:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.list div:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+/*index.html*/
+.circleList {
+  /* display: inline-block; */
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.circleList span {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 1px solid black;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  transition: 0.5s;
+}
+.circleList:nth-of-type(1):hover span{
+  border: none;
+  background-color: crimson;
+}
+.circleList:nth-of-type(2):hover span{
+  border: none;
+  background-color: rgb(31, 103, 175);
+}
+.circleList:nth-of-type(3):hover span{
+  border: none;
+  background-color: rgb(121, 153, 56);
+}
+.circleList span:nth-child(1){
+  animation: circle 6s linear infinite;
+}
+.circleList span:nth-child(2){
+  animation: circle 5s linear infinite;
+  animation-direction: reverse;
+}
+.circleList span:nth-child(3){
+  animation: circle 10s linear infinite;
+}
+.circleList:hover span:nth-child(1){
+  opacity: 0.3;
+}
+.circleList:hover span:nth-child(2){
+  opacity: 0.5;
+}
+.circleList:hover span:nth-child(3){
+  opacity: 0.7;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0)
   }
-  header a {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    
+  100% {
+    transform: rotate(360deg);
   }
-  .list {
-    background-color: rgb(60, 107, 155);
-    position: relative;
-    clear: both;
-    height: 50px;
-    border: 1px solid white;
-    border-radius: 5px;
-  }
-  section div {
-    display:inline-block;
-    font-size: 17px;
-  }
-  section>div a{
-    color: rgb(223, 205, 205);
-    text-decoration: none;
-    transition: 1s;
-  }
-  section>div a:hover{
-    color:black;
-    text-decoration: underline;
-  }
-  section div:nth-of-type(1){
-    position:absolute;
-    top:50%;
-    left:30%;
-    transform: translate(-50%, -50%);
-  }
-  section div:nth-of-type(2){
-    position:absolute;
-    top:50%;
-    left:70%;
-    transform: translate(-50%, -50%); 
-  }
-  .contentBox{
-    /* border:5px solid black; */
-    position: relative;
-  }
-  .contentBox img{
-    width: 200px;
-    display: inline-block;
-    margin-left: 30px;
-    border-radius: 15px;
-    box-shadow: 5px -5px 15px rgba(105, 71, 71, 0.836);
-    margin-top: 20px
-  }
-  .contentBox ul{
-    display: inline-block;
-    position: absolute;
-    font-size: 20px;
-  }
-  .contentBox ul li{
-    margin-top: 15px;
-  }
-  
+}
+.circleList div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.circleList div h3{
+  text-size-adjust: 15px;
+}
+.circleList div a{
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 50% 40% 35% 40%;
+  padding: 5px;
+  text-decoration: none;
+}
+.circleList:hover a{
+  text-decoration: underline;
+  color : rgb(207, 197, 197);
+  border: 1px solid rgb(184, 176, 176);
+}
+/* intro.html */
+.contentBox {
+  /* border:5px solid black; */
+  position: relative;
+}
+.contentBox img {
+  width: 200px;
+  display: inline-block;
+  margin-left: 30px;
+  border-radius: 15px;
+  box-shadow: 5px -5px 15px rgba(105, 71, 71, 0.836);
+  margin-top: 20px
+}
+.contentBox ul {
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+}
+.contentBox ul li {
+  margin-top: 15px;
+}
+section>a{
+  display:inline-block;
+  margin: 20px;
+  text-decoration: none;
+  color:rgba(105, 71, 71, 0.836);
+  transition: 0.5s;
+}
+section>a:hover{
+  color: rgb(41, 41, 212);
+}
+/* music.html */
+.musicName{
+  text-shadow: 10px 3px 5px gray;
+}
+.musicList p iframe{
+  box-shadow: 10px 5px 5px rgba(32, 31, 31, 0.322);
+  border-radius: 10px;
+}
