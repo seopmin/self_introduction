@@ -202,14 +202,18 @@ footer {
 }
 
 /* music.html */
-section>a{
+.songContent {
+  display: flex;
+  justify-content: center;
+}
+.songContent div>a{
   display:inline-block;
-  margin: 20px;
+  margin: 20px 0 5px 0;
   text-decoration: none;
   color:rgba(105, 71, 71, 0.836);
   transition: 0.5s;
 }
-section>a:hover{
+.songContent>a:hover{
   color: rgb(41, 41, 212);
 }
 .musicName{
