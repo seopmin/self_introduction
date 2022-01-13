@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5em;
@@ -73,12 +74,32 @@ header #home{
   left: 70%;
   transform: translate(-50%, -50%);
 }
+footer {
+  /* height: 100px;
+  background-color: rgb(60, 107, 155); */
+}
 /*index.html*/
+.contentNumber {
+  font-size: 20px;
+  border-radius: 3px 20px;
+  font-family: 'Jeju Hallasan', cursive;;
+  margin-top: 20px;
+  padding-left: 10%;
+  background-color: rgba(219, 27, 27, 0.253);
+}
+.contentNumber #fire {
+  color : rgb(185, 8, 8);
+  background-color: rgba(255, 0, 0, 0.541);
+  border-radius: 30% 30% 50% 50%;
+}
+.listBox {
+  display: flex;
+  justify-content: center;
+}
 .circleList {
   /* display: inline-block; */
   padding: 20px;
-  margin-top: 30px;
-  margin-left: 10%;
+  margin: 10px 30px;
   width: 200px;
   height: 200px;
   position: relative;
@@ -158,6 +179,11 @@ header #home{
   /* border:5px solid black; */
   position: relative;
 }
+.content{
+  border-bottom: #8585859a dotted 1px; 
+  margin: 10px 3% 10px 3%;
+  padding: 0 30px 15px 30px;
+}
 .contentBox img {
   width: 200px;
   display: inline-block;
@@ -169,11 +195,13 @@ header #home{
 .contentBox ul {
   display: inline-block;
   position: absolute;
-  font-size: 20px;
+  font-size: 15px;
 }
 .contentBox ul li {
-  margin-top: 15px;
+  margin-top: 10px;
 }
+
+/* music.html */
 section>a{
   display:inline-block;
   margin: 20px;
@@ -184,7 +212,6 @@ section>a{
 section>a:hover{
   color: rgb(41, 41, 212);
 }
-/* music.html */
 .musicName{
   text-shadow: 10px 3px 5px gray;
 }
