@@ -70,16 +70,22 @@ header #home{
 .list div:nth-of-type(1) {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 25%;
   transform: translate(-50%, -50%);
 }
 .list div:nth-of-type(2) {
   position: absolute;
   top: 22%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%, 0%);
 }
-.dropdown:hover .sub{
+.list div:nth-of-type(3) {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+/* .dropdown:hover .sub{
   visibility: visible;
 }
 .sub {
@@ -93,7 +99,7 @@ header #home{
   padding: 2px;
   text-decoration: none;
   color: rgb(0, 0, 0);
-}
+} */
 
  /* footer {
   height: 100px;
@@ -101,16 +107,16 @@ header #home{
 }  */
 /*index.html*/
 
-.contentNumber, .listBox, .listBox2{
+.contentNumber, .listBox, .listBox2, .songContent{
   box-sizing: border-box;
   margin: auto;
 }
 @media(min-width:900px){
-  .contentNumber, .listBox, .listBox2{
+  .contentNumber, .listBox, .listBox2, .songContent{
     width: 900px;
     box-sizing: border-box;
   }
-  .listBox, .listBox2{
+  .listBox, .listBox2, .songContent{
     border-left: 2px dotted rgba(0, 0, 0, 0.253);
     border-right: 2px dotted rgba(0, 0, 0, 0.253);
   }
@@ -255,16 +261,22 @@ header #home{
 }
 .content{
   border-bottom: #8585859a dotted 1px; 
-  margin: 10px 3% 10px 3%;
+  margin: 5% 3% 10px 3%;
   padding: 0 30px 15px 30px;
 }
 .contentBox img {
   width: 200px;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 10%;
   border-radius: 15px;
   box-shadow: 5px -5px 15px rgba(105, 71, 71, 0.836);
   margin-top: 20px
+}
+#family img {
+  margin-left: 35%;
+}
+#family p{
+  margin: 10px 0 10px 38%;
 }
 .contentBox ul {
   display: inline-block;
@@ -273,6 +285,16 @@ header #home{
 }
 .contentBox ul li {
   margin-top: 10px;
+}
+#career_goal {
+  height: 50px;
+  background-color: rgb(189, 255, 255);
+  border-radius: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#career_goal h1 {
+  margin-left: 5%;
 }
 
 /* music.html */
